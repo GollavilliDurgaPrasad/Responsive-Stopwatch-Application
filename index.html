@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Stopwatch Application</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+</head>
+<body>
+  <div class="container">
+    <div class="theme-toggle">
+      <button id="theme-button">
+        <div class="theme-icon"></div>
+      </button>
+    </div>
+    
+    <div class="stopwatch">
+      <h1>Stopwatch</h1>
+      
+      <div class="time-display">
+        <div class="time-section" id="hours">
+          <span class="time-value">00</span>
+          <span class="time-label">HOURS</span>
+        </div>
+        <span class="time-separator">:</span>
+        <div class="time-section" id="minutes">
+          <span class="time-value">00</span>
+          <span class="time-label">MINUTES</span>
+        </div>
+        <span class="time-separator">:</span>
+        <div class="time-section" id="seconds">
+          <span class="time-value">00</span>
+          <span class="time-label">SECONDS</span>
+        </div>
+        <span class="time-separator">.</span>
+        <div class="time-section" id="milliseconds">
+          <span class="time-value">00</span>
+          <span class="time-label">MS</span>
+        </div>
+      </div>
+      
+      <div class="controls">
+        <button id="start-pause" class="btn primary">
+          <span>Start</span>
+        </button>
+        <button id="reset" class="btn secondary" disabled>
+          <span>Reset</span>
+        </button>
+        <button id="lap" class="btn secondary" disabled>
+          <span>Lap</span>
+        </button>
+      </div>
+      
+      <div class="laps-container">
+        <h2 id="laps-title" class="hidden">Lap Times</h2>
+        <div id="laps" class="laps"></div>
+      </div>
+    </div>
+    
+    <footer>
+      <p>Made with ❤️ | 2025</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
